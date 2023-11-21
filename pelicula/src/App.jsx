@@ -196,11 +196,10 @@ function App() {
           <section className="movie-details-section">
             <h2>Detalles</h2>
             <div className="selected-movie">
-            <video controls>
-                <source src={selectedMovie.videoURL} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <img src={selectedMovie.poster} alt={selectedMovie.title} />
+                <video controls>
+                  <source src={selectedMovie.videoURL} type="video/mp4" />
+                </video>
+                <img src={selectedMovie.poster} alt={selectedMovie.title} />
               <div className="selected-movie-details">
                 <h3>{selectedMovie.title}</h3>
                 <p>Año: {selectedMovie.year}</p>
