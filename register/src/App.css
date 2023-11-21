@@ -1,0 +1,52 @@
+/* app.css */
+.main {
+  text-align: center;
+  color: #fff;
+}
+
+.main-w3l {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+.logo-w3 {
+  margin-top: 0;
+}
+
+.w3layouts-main {
+  padding: 20px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  width: calc(100% - 24px);
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type='submit'] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #2196f3;
+  color: white;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: #0d8af5;
+}
+
+.footer-w3l {
+  margin-top: 20px;
+}

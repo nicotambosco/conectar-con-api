@@ -1,0 +1,13 @@
+/* Estilos específicos para el componente App */
+.w3l-signinform {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.w3l-signinform h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Agrega estilos adicionales según sea necesario */
+/* ... */
