@@ -49,7 +49,7 @@ const App = () => {
         </a>
         
         <div className="footer">
-          <p>&copy; 2023 </p>
+          <p>&copy; 2023 CineFlix </p>
         </div>
       </div>
     </div>
