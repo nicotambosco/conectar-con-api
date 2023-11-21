@@ -158,16 +158,16 @@ function App() {
   const [selectedMovie, setSelectedMovie] = useState(null);
   
   useEffect(() => {
-    // Llamada a la API para obtener datos de películas
+    // Llamada a la API 
     fetch('URL_DE_LA_API')
       .then((response) => response.json())
       .then((data) => setMovieData(data))
       .catch((error) => console.error('Error fetching data:', error));
-  }, []);
+   }, []);
   
     const handleMovieClick = (movie) => {
     setSelectedMovie(movie);
-  };
+   };
 
   return (
     <div className="app">
