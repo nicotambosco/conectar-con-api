@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
 import './App.css';
+useEffect(() => {
+  // Llamada a la API para obtener datos de películas
+  fetch('URL_DE_LA_API')
+    .then((response) => response.json())
+    .then((data) => setMovieData(data))
+    .catch((error) => console.error('Error fetching data:', error));
+}, []);
 
 const movieData = [
   {
@@ -189,6 +196,10 @@ function App() {
           <section className="movie-details-section">
             <h2>Detalles</h2>
             <div className="selected-movie">
+            <video controls>
+                <source src={selectedMovie.videoURL} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
               <img src={selectedMovie.poster} alt={selectedMovie.title} />
               <div className="selected-movie-details">
                 <h3>{selectedMovie.title}</h3>
