@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
 import './App.css';
+useEffect(() => {
+  // Llamada a la API para obtener datos de películas
+  fetch('URL_DE_LA_API')
+    .then((response) => response.json())
+    .then((data) => setMovieData(data))
+    .catch((error) => console.error('Error fetching data:', error));
+}, []);
 
 const movieData = [
   {
@@ -156,18 +163,10 @@ const movieData = [
 
 function App() {
   const [selectedMovie, setSelectedMovie] = useState(null);
-  
-  useEffect(() => {
-    // Llamada a la API 
-    fetch('URL_DE_LA_API')
-      .then((response) => response.json())
-      .then((data) => setMovieData(data))
-      .catch((error) => console.error('Error fetching data:', error));
-   }, []);
-  
-    const handleMovieClick = (movie) => {
+
+  const handleMovieClick = (movie) => {
     setSelectedMovie(movie);
-   };
+  };
 
   return (
     <div className="app">
@@ -199,7 +198,7 @@ function App() {
             <div className="selected-movie">
                 <video controls>
                   <source src={selectedMovie.videoURL} type="video/mp4" />
-                </video>
+                  </video>
                 <img src={selectedMovie.poster} alt={selectedMovie.title} />
               <div className="selected-movie-details">
                 <h3>{selectedMovie.title}</h3>
