@@ -41,10 +41,10 @@ const App = () => {
             <button type="submit">Iniciar sesión</button>
           </div>
         </form>
-        <a href="http://127.0.0.1:5500/recuperar%20contrase%C3%B1a/restablecer-password.html" className="forgot">
+        <a href="ingresar url del olvidaste tu contraseña" className="forgot">
           ¿Olvidaste tu contraseña?
         </a>
-        <a href="http://127.0.0.1:5500/recuperar%20contrase%C3%B1a/registro.html" className="forgot">
+        <a href="ingresar url del registro" className="forgot">
           Registrarme
         </a>
         
